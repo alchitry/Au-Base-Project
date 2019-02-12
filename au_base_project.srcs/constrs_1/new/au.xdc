@@ -37,8 +37,9 @@ set_property IOSTANDARD LVCMOS33 [get_ports {led[6]}]
 set_property PACKAGE_PIN N16 [get_ports {led[7]}]
 set_property IOSTANDARD LVCMOS33 [get_ports {led[7]}]
 
-set_property PACKAGE_PIN P15 [get_ports {usb_tx}]
+# serial names are flipped in the schematic (named for the FTDI chip)
+set_property PACKAGE_PIN P16 [get_ports {usb_tx}]
 set_property IOSTANDARD LVCMOS33 [get_ports {usb_tx}]
 
-set_property PACKAGE_PIN P16 [get_ports {usb_rx}]
+set_property PACKAGE_PIN P15 [get_ports {usb_rx}]
 set_property IOSTANDARD LVCMOS33 [get_ports {usb_rx}]
